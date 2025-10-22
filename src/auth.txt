@@ -1,9 +1,13 @@
 SonarCloud
 -------------------------------
 
-http://SonarCloud.io
+https://SonarCloud.io
 
 D9f15263091231c56846248b02dd892574cdf8b5
+
+organizetion_key : Settawut17
+
+Settawut17_devsecops-solution
 
 -------------------------------
 

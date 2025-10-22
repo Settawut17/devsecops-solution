@@ -37,7 +37,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          # ใช้ sonar-scanner ที่ติดตั้งไว้ global
+         
           sonar-scanner \
             -Dsonar.projectKey=Settawut17_devsecops-solution \
             -Dsonar.organization=Settawut17 \

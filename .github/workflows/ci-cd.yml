@@ -44,6 +44,11 @@ jobs:
             -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
             -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
             -Dsonar.sources=app
+            -Dsonar.javascript.lcov.reportPaths=app/coverage/lcov.info \
+            -Dsonar.coverage.exclusions=app/index.js
+
+      - name: Run Unit Tests and Generate Coverage Report (LCOV)
+        run: npx jest --coverage --config app/package.json --forceExit
 
       - name: Delay to ensure Quality Gate Status is ready
         run: echo "Waiting for 30 seconds for SonarQube processing..." && sleep 30s   
@@ -64,3 +69,5 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}     
+
+      

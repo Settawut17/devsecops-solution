@@ -40,7 +40,7 @@ jobs:
          
           sonar-scanner \
             -Dsonar.projectKey=Settawut17_devsecops-solution \
-            -Dsonar.organization=Settawut17 \
+            -Dsonar.organization=settawut17 \
             -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} \
             -Dsonar.token=${{ secrets.SONAR_TOKEN }} \
             -Dsonar.sources=app

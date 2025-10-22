@@ -1,7 +1,7 @@
 SonarCloud
 -------------------------------
 
-https://SonarCloud.io
+https://sonarcloud.io
 
 D9f15263091231c56846248b02dd892574cdf8b5
 
